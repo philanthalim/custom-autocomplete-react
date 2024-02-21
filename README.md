@@ -1,6 +1,6 @@
 # Overview
 
-Fully featured reusable autocomplete component built from scratch [here](https://sage-jalebi-d0d93e.netlify.app/).\
+Fully featured reusable autocomplete component built from scratch [here](https://main--iridescent-cheesecake-dc03a3.netlify.app/).\
 Frontend Framework: React.js, TypeScript \
 CSS: TailwindCSS \
 
@@ -23,3 +23,4 @@ switching to a loading display when the state is true
 ## To work on
 1. Make use of Preline UI's prebuilt components and UI elements to quickly design and customize responsive mobile-first websites
 2. Add more type checking
+3. Click entire list item to select item/check it (improve user experience)
