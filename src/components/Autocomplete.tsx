@@ -6,7 +6,7 @@ interface Props {
   inputLabel: string;
   description: string;
   disabledInput: boolean;
-  renderSearchList: any; //
+  renderSearchList: any; 
   filterFunction: (item: any, query: any) => boolean;
 }
 function Autocomplete({
@@ -26,9 +26,6 @@ function Autocomplete({
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const inputRef = useRef<HTMLInputElement>(null);
   const popperRef = useRef<HTMLInputElement>(null);
-  // console.log(highlightedIndex);
-  // console.log(selectedItems, "selectedItems");
-  // console.log(searchResults,'ser')
 
   const handleKeyDown = (event: KeyboardEvent) => {
     switch (event.key) {
@@ -109,12 +106,6 @@ function Autocomplete({
   const fetchSearchResults = async (value: any) => {
     setIsOpen(true);
     setLoading(true);
-    // setTimeout(() => {
-    //   // Filter the data based on the search query
-    //   const results = options.filter((item) => filterFunction(item, value));
-    //   setSearchResults(results);
-    //   setLoading(false);
-    // }, 500);
     await new Promise((resolve) => setTimeout(resolve, 1000));
     const results = options.filter((item: any) => filterFunction(item, value));
     setLoading(false);
