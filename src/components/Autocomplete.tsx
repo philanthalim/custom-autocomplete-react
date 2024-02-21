@@ -230,7 +230,7 @@ function Autocomplete({
       </div>
       {isOpen && (
         <div
-          className="h-full absolute bg-white bg-slate-50 h-[140px] w-[310px] z-50 overflow-y-auto rounded shadow"
+          className="absolute bg-white bg-slate-50 h-[140px] w-[310px] z-50 overflow-y-auto rounded shadow"
           ref={popperRef}
         >
           {searchResults.length > 0 ? (
